@@ -1,0 +1,163 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+html,
+body,
+header,
+.view {
+  height: 95%;
+  font-family: "Mukta", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.view {
+  background-position: bottom bottom;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+}
+
+.top-nav-collapse {
+  background-color: rgba(255, 179, 0, 0.8) !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(255, 179, 0, 0.8) !important;
+  }
+}
+
+.navbar-brand {
+  font-family: "Lemonada", cursive;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Textos                                   */
+/* -------------------------------------------------------------------------- */
+h1 {
+  letter-spacing: 8px;
+}
+
+.h1-reponsive {
+  font-family: "Lemonada", cursive;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Enlaces                                  */
+/* -------------------------------------------------------------------------- */
+.nav-link.active {
+  background-color: rgba(255, 179, 0, 0.8) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Destinos                                  */
+/* -------------------------------------------------------------------------- */
+.destiny-mansory .card {
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.destiny-mansory .card h4 {
+  font-weight: 300;
+}
+
+.destiny-mansory .card h4::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #795548;
+  margin: 15px auto 20px;
+}
+
+.destiny-mansory .card p {
+  color: #364452 !important;
+  font-weight: 500 !important;
+}
+
+.articulo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articulo h5 {
+  font-size: 18px;
+}
+
+.articulo h5::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #795548;
+  margin-top: 10px;
+}
+
+.fab {
+  font-size: 25px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Formularios                                */
+/* -------------------------------------------------------------------------- */
+.md-form input[type='text']:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 #F5F5F2 !important;
+          box-shadow: 0 1px 0 0 #F5F5F2 !important;
+  border-bottom: 1px solid #F5F5F2 !important;
+}
+
+.md-form input[type='text']:focus:not([readonly]) + label {
+  color: #F5F5F2 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Ultimas noticias                              */
+/* -------------------------------------------------------------------------- */
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 380px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,210 @@
+$color-primario: rgba(255, 179, 0, 0.8);
+$color-secundario: #795548;
+$color-terciario: #8191A5;
+$color-cuaternario: #364452;
+$color-quinario: #F5F5F2;
+$fuente-primaria: 'Mukta',
+sans-serif;
+$fuente-secundaria: 'Roboto Condensed',
+sans-serif;
+$fuente-titulo-pagina: 'Lemonada',
+cursive;
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   Header                                   */
+
+
+/* -------------------------------------------------------------------------- */
+
+html,
+body,
+header,
+.view {
+    height: 95%;
+    font-family: $fuente-primaria;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.view {
+    background-position: bottom bottom;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+}
+
+.top-nav-collapse {
+    background-color: $color-primario !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: $color-primario !important;
+    }
+}
+
+.navbar-brand {
+    font-family: $fuente-titulo-pagina;
+    font-weight: 700;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   Textos                                   */
+
+
+/* -------------------------------------------------------------------------- */
+
+h1 {
+    letter-spacing: 8px;
+}
+
+.h1-reponsive {
+    font-family: $fuente-titulo-pagina;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 400;
+}
+
+h5 {
+    letter-spacing: 3px;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+
+p {
+    font-family: $fuente-secundaria;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   Enlaces                                  */
+
+
+/* -------------------------------------------------------------------------- */
+
+.nav-link {
+    &.active {
+        background-color: $color-primario!important;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                  Destinos                                  */
+
+
+/* -------------------------------------------------------------------------- */
+
+.destiny-mansory {
+    .card {
+        text-align: center;
+        border: none;
+        margin-bottom: 40px;
+        h4 {
+            font-weight: 300;
+            &::before {
+                content: '';
+                display: block;
+                width: 70px;
+                height: 2px;
+                background: $color-secundario;
+                margin: 15px auto 20px;
+            }
+        }
+        p {
+            color: $color-cuaternario!important;
+            font-weight: 500!important;
+        }
+    }
+}
+
+.articulo {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h5 {
+        font-size: 18px;
+        &::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 2px;
+            background: $color-secundario;
+            margin-top: 10px;
+        }
+    }
+}
+
+.fab {
+    font-size: 25px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                 Formularios                                */
+
+
+/* -------------------------------------------------------------------------- */
+
+.md-form input[type='text']:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 $color-quinario !important;
+    border-bottom: 1px solid $color-quinario !important;
+}
+
+.md-form input[type='text']:focus:not([readonly])+label {
+    color: $color-quinario !important;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                              Ultimas noticias                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-item {
+    img {
+        height: 380px;
+    }
+}
